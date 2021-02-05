@@ -1,0 +1,77 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="upcoming_service">
+    	<div class="sub_header">
+        	Upcoming Service Appointments
+        </div>
+        <div class="table_header">
+        	<div class="table_label">
+            	Date	
+            </div>
+            <div class="table_label">
+            	Activity	
+            </div>
+            <div class="table_label">
+            	Asset	
+            </div>
+            <div class="table_label">
+            	Type	
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	15th Feb 2021
+            </div>
+            <div class="table_field">
+            	Site Inspection
+            </div>
+            <div class="table_field">
+            	WDM V8
+            </div>
+            <div class="table_field">
+            	Routine
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	27th Jan 2021
+            </div>
+            <div class="table_field">
+            	Shipment
+            </div>
+            <div class="table_field">
+            	Grinder
+            </div>
+            <div class="table_field">
+            	Routine
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	28rd Jan 2021
+            </div>
+            <div class="table_field">
+            	Installation
+            </div>
+            <div class="table_field">
+            	WDM V8
+            </div>
+            <div class="table_field">
+            	Routine
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	23rd Jan 2021
+            </div>
+            <div class="table_field">
+            	Parts Replace
+            </div>
+            <div class="table_field">
+            	WDM V8
+            </div>
+            <div class="table_field">
+            	Breakdown
+            </div>
+        </div>
+    </div>	
+</aura:component>

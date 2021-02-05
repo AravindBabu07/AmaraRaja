@@ -1,0 +1,40 @@
+.THIS .charts{
+    margin:10px;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    height: 180px;
+}
+
+.THIS .header_content {
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+    margin-bottom: 5px;
+}
+
+.THIS .header_content_no{
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 6px;
+    margin-bottom: 5px;   
+}
+
+.THIS .graph_value {
+    font-size: 50px;
+    color: #2e456f;
+    Text-align:center;
+}
+
+.THIS .graph_value_text{
+	font-size: 24px;
+    color: #2e456f;
+    Text-align:center;    
+}
+
+.THIS.body_content{
+    background:white;
+    border-radius:3px;
+    padding:3px;
+}

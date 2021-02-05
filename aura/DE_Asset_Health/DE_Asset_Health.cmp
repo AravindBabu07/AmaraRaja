@@ -1,0 +1,82 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="asset_health">
+    	<div class="health">
+        	<div class="health_icon">
+            	<img src="{!$Resource.DE_Community_Assets + '/age.png'}" width="70"/>
+            </div>
+            <div class="health_details">
+            	<div class="health_name">
+                	Age
+                </div>
+                <div class="health_output">
+                	1 Year
+                </div>
+            </div>
+        </div>
+        <div class="health">
+        	<div class="health_icon">
+            	<img src="{!$Resource.DE_Community_Assets + '/status.png'}" width="70"/>
+            </div>
+            <div class="health_details">
+            	<div class="health_name">
+                	Current Status
+                </div>
+                <div class="health_output">
+                	Active
+                </div>
+            </div>
+        </div>
+        <div class="health">
+        	<div class="health_icon">
+            	<img src="{!$Resource.DE_Community_Assets + '/breakdown.png'}" width="70"/>
+            </div>
+            <div class="health_details">
+            	<div class="health_name">
+                	# of Breakdowns
+                </div>
+                <div class="health_output">
+                	3
+                </div>
+            </div>
+        </div>
+        <div class="health">
+        	<div class="health_icon">
+            	<img src="{!$Resource.DE_Community_Assets + '/breakdown_days.png'}" width="70"/>
+            </div>
+            <div class="health_details">
+            	<div class="health_name">
+                	# of Breakdown Days
+                </div>
+                <div class="health_output">
+                	10
+                </div>
+            </div>
+        </div>
+        <div class="health">
+        	<div class="health_icon">
+            	<img src="{!$Resource.DE_Community_Assets + '/service_cost.png'}" width="70"/>
+            </div>
+            <div class="health_details">
+            	<div class="health_name">
+                	Service Cost
+                </div>
+                <div class="health_output">
+                	Rs. 30K
+                </div>
+            </div>
+        </div>
+        <div class="health">
+        	<div class="health_icon">
+            	<img src="{!$Resource.DE_Community_Assets + '/lifespan.png'}" width="70"/>
+            </div>
+            <div class="health_details">
+            	<div class="health_name">
+                	Predicted Life Remaining
+                </div>
+                <div class="health_output">
+                	40 M
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

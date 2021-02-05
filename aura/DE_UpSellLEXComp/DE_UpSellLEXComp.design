@@ -1,0 +1,6 @@
+<design:component label="Product UpSell">
+	<design:attribute name="recordId" label="Record Id" default="{!recordId}" />
+    <design:attribute name="cardTitle" label="Card Title" default="UpSell Products" />
+    <design:attribute name="currencySymbol" label="Currency Symbol" default="€" />
+    <design:attribute name="imageField" label="Product2 Image Field" />
+</design:component>

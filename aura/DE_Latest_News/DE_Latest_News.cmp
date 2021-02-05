@@ -1,0 +1,40 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="news">
+    	<div class="news_image">
+        	<img src="https://www.wendtindia.com/wp-content/uploads/2020/02/online_sbi_payment.jpg" width="110"></img>
+        </div>
+        <div class="news_details">
+        	<div class="news_name">
+           		Pay Directly by QR Code	 
+            </div>
+            <div class="news_other">
+            	Jan 14th, By WENDT India Ltd.	
+            </div>
+            <div class="news_description">
+            	Now you can make the payment directly as we have integrated the SBI QR Code for your convenient.
+            </div>
+        </div>
+        <div class="news_button">
+        	<button class="slds-button slds-button_brand">View Details</button>
+        </div>
+    </div>
+    <div class="news">
+    	<div class="news_image">
+        	<img src="https://www.wendtindia.com/wp-content/uploads/2019/01/news-5.jpg" width="110"></img>
+        </div>
+        <div class="news_details">
+        	<div class="news_name">
+           		Kutumb An Employee Newsletter 
+            </div>
+            <div class="news_other">
+            	Dec 7th, By WENDT India Ltd.	
+            </div>
+            <div class="news_description">
+            	Our in-house newsletter is getting good traction and witnessing enhanced participation from all our employees.
+            </div>
+        </div>
+        <div class="news_button">
+        	<button class="slds-button slds-button_brand">View Details</button>
+        </div>
+    </div>
+</aura:component>

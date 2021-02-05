@@ -1,0 +1,59 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="open_orders">
+        <div class="table_header">
+        	<div class="table_label">
+            	Machinery 	
+            </div>
+            <div class="table_label">
+            	Location	
+            </div>
+            <div class="table_label">
+            	Status	
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	<a>BHEL WRS 300</a>
+            </div>
+            <div class="table_field">
+            	Vasanth Kunj
+            </div>
+            <div class="table_field">
+                <img src="{!$Resource.DE_Community_Assets + '/delivery_1.png'}"/>
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	<a>BHEL WRS 300</a>
+            </div>
+            <div class="table_field">
+            	Electronic City 
+            </div>
+            <div class="table_field">
+            	<img src="{!$Resource.DE_Community_Assets + '/delivery_4.png'}"/>
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	<a>BHEL WRS 300</a>
+            </div>
+            <div class="table_field">
+            	Bandra
+            </div>
+            <div class="table_field">
+            	<img src="{!$Resource.DE_Community_Assets + '/delivery_2.png'}"/>
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	<a>BHEL WRS 300</a>
+            </div>
+            <div class="table_field">
+            	Bommasandra
+            </div>
+            <div class="table_field">
+                <img src="{!$Resource.DE_Community_Assets + '/delivery_3.png'}"/>
+            </div>
+        </div>
+    </div>	
+</aura:component>

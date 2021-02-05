@@ -1,0 +1,166 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="DE_EnquiryProductCls">
+    <aura:attribute name="EPlist" type="Enquiry_Product__c[]"/>
+    <aura:attribute name="EPlistSaved" type="Enquiry_Product__c[]"/>
+    
+    <aura:attribute name="recordId"  type="string" default="0063i000002wpVYAAM"/>
+    <aura:attribute name="btnValue" type="string"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <table class="slds-table slds-table_bordered slds-table_resizable-cols" role="grid" style="width: 98%;margin: auto;">
+        <thead>
+            <tr class="slds-line-height_reset">
+                <th aria-sort="none" class="slds-is-sortable slds-is-resizable slds-text-title_caps" aria-label="Name" scope="col">
+                    <span class="slds-truncate" >Product</span>
+                </th>
+                <th aria-sort="none" class="slds-is-sortable slds-is-resizable slds-text-title_caps" aria-label="Name" scope="col">
+                    <span class="slds-truncate" >Type</span>
+                </th>
+                <th aria-sort="none" class="slds-is-sortable slds-is-resizable slds-text-title_caps" aria-label="Name" scope="col">
+                    <span class="slds-truncate" >Dia(MM)</span>
+                </th>
+                <th aria-sort="none" class="slds-is-sortable slds-is-resizable slds-text-title_caps" aria-label="Name" scope="col">
+                    <span class="slds-truncate" >Thick(MM)</span>
+                </th>
+                <th aria-sort="none" class="slds-is-sortable slds-is-resizable slds-text-title_caps" aria-label="Name" scope="col">
+                    <span class="slds-truncate" >HT(MM)</span>
+                </th>
+                <th aria-sort="none" class="slds-is-sortable slds-is-resizable slds-text-title_caps" aria-label="Name" scope="col">
+                    <span class="slds-truncate" >List Price</span>
+                </th>
+                <th aria-sort="none" class="slds-is-sortable slds-is-resizable slds-text-title_caps" aria-label="Name" scope="col">
+                    <span class="slds-truncate" >QTY</span>
+                </th>
+                <th aria-sort="none" class="slds-is-sortable slds-is-resizable slds-text-title_caps" aria-label="Name" scope="col">
+                    <span class="slds-truncate" >Discount</span>
+                </th>
+                <th aria-sort="none" class="slds-is-sortable slds-is-resizable slds-text-title_caps" aria-label="Name" scope="col">
+                    <span class="slds-truncate" >Sales Price</span>
+                </th>
+                <th>
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+            
+            
+        </thead>
+        <tbody>
+            
+            
+            <aura:iteration items="{!v.EPlist}" var="EP" indexVar="index">
+                <aura:if isTrue="{!equals(EP.InEditMode_c__c ,false)}">
+                    <tr class="slds-hint-parent">
+                        <td role="gridcell">
+                            <div class="slds-truncate" >{!EP.Product__c}</div>
+                        </td>
+                        <td role="gridcell">
+                            <div class="slds-truncate" >{!EP.Type__c}</div>
+                        </td>
+                        <td role="gridcell">
+                            <div class="slds-truncate" >{!EP.Dia_mm__c}</div>
+                        </td>
+                        <td role="gridcell">
+                            <div class="slds-truncate" >{!EP.Thickness_mm__c}</div>
+                        </td>
+                        <td role="gridcell">
+                            <div class="slds-truncate" >{!EP.Height_mm__c}</div>
+                        </td>
+                        <td role="gridcell">
+                            <div class="slds-truncate" >Rs {!EP.List_Price__c}</div>
+                        </td>
+                        <td role="gridcell">
+                            <div class="slds-truncate" >{!EP.Quantity__c}</div>
+                        </td>
+                        <td role="gridcell">
+                            <div class="slds-truncate" >{!EP.Discount__c}%</div>
+                        </td>
+                        <td role="gridcell">
+                            <div class="slds-truncate" >Rs {!EP.Sales_Price__c}</div>
+                        </td>
+                        <td role="gridcell" style="padding:5px 0px 5px 5px;">    
+                            <!--<lightning:icon  iconName="utility:add" onclick="{!c.addrow}" /> -->
+                                <lightning:buttonIcon iconName="utility:add"   onclick="{! c.addrow }" alternativeText="Settings" title="Settings" />
+
+                        </td>
+                        <td role="gridcell" style="padding:5px 0px 5px 5px;">
+                         
+                       <!-- <lightning:button variant="brand" value="{!EP}" label="Edit" onclick="{! c.handleEditAccPlan }" /> -->
+                           <!-- <div data-target="{!EP.Id}" onclick="{!c.editClicked }">     <lightning:icon iconName="utility:edit"  /> </div>  -->
+    <lightning:buttonIcon iconName="utility:edit" value="{!EP}" onclick="{! c.handleEditAccPlan }" alternativeText="Settings" title="Settings" />
+
+                        </td>
+                        
+                        <td style="padding:5px 0px 5px 5px;">
+                            <!--<lightning:button variant="brand" value="{!index}" label="Delete" onclick="{! c.deleterow }" />--> 
+                                <lightning:buttonIcon iconName="utility:delete" value="{!index}" onclick="{! c.deleterow }"  alternativeText="Settings" title="Settings" />
+
+
+                        </td>
+                    </tr>
+                    
+                    <aura:set attribute="else">
+                        <tr class="slds-line-height_reset"  >
+                            <td>  
+                                <lightning:select name="Product" value="{!EP.Product__c}">
+                                    <option value="Abrasives">Abrasives</option>
+                                    <option value="Electro Minerals">Electro Minerals</option>
+                                    <option value="Industrial Ceramics">Industrial Ceramics</option>
+                                    <option value="Super Refractories">Super Refractories</option>
+                                </lightning:select>
+                            </td>
+                            <td>
+                                <lightning:select name="Type"  value="{!EP.Type__c}">
+                                    <option value="Snagging Wheel">Snagging Wheel </option>
+                                    <option value="Roll Grinding Wheel">Roll Grinding Wheel</option>
+                                    <option value="Razor Blade Grinding Wheel">Razor Blade Grinding Wheel</option>
+                                    <option value="F-Type Wheel">F-Type Wheel </option>
+                                    <option value="Thin Wheel">Thin Wheel </option>
+                                    <option value="Gear Grinding">Gear Grinding </option>
+                                    <option value="Internal Grinding ">Internal Grinding </option>
+                                    <option value="Alumina">Alumina </option>
+                                    <option value="Zirconia">Zirconia  </option>
+                                    <option value="Aluminium Titanate">Aluminium Titanate </option>
+                                    <option value="RBSic">RBSic</option>
+                                    <option value="Other">Other</option>
+                                </lightning:select>                 
+                            </td>
+                            <td>
+                                <lightning:input value="{!EP.Dia_mm__c}"/> 
+                            </td>
+                            <td>
+                                <lightning:input value="{!EP.Height_mm__c }"/> 
+                            </td>
+                            <td>
+                                <lightning:input value="{!EP.Thickness_mm__c  }"/> 
+                            </td>
+                            <td>
+                                <lightning:input value="{!EP.List_Price__c  }"/> 
+                            </td>
+                            <td>
+                                <lightning:input value="{!EP.Quantity__c  }"/> 
+                            </td>
+                            <td> 
+                                <lightning:input value="{!EP.Discount__c  }"/> 
+                            </td>
+                            <td>
+                                <lightning:input value="{!EP.Sales_Price__c}" disabled ="true"/> 
+                            </td>
+                            <td >
+                                    <lightning:buttonIcon iconName="utility:add"  onclick="{! c.addrow }" alternativeText="Settings" title="Settings" />
+
+                                <!--<lightning:icon  iconName="utility:add" onclick="{!c.addrow}" /> -->
+                            </td> 
+                            <td>
+                                <lightning:button variant="brand" value="{!index}" label="Delete" onclick="{! c.deleterow }" />                    </td> 
+                        </tr>
+                    </aura:set>
+                </aura:if>
+            </aura:iteration>
+            
+            
+        </tbody>
+    </table>
+    <br/>
+    <lightning:button label="Submit to pricing" onclick="{!c.save}" />
+    <lightning:button label="Submit to Sales" onclick="{!c.save1}" />
+    <lightning:button label="Submit for Approval"  />
+</aura:component>

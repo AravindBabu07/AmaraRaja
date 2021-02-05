@@ -1,0 +1,39 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="wendt_team">
+    	<div class="sub_header">
+        	Your WENDT Team
+        </div>
+        <div class="team_details">
+        	<div class="team_pic">
+            	<img src="{!$Resource.DE_Community_Assets + '/ram.png'}" width="60" style="border-radius:60px;"/>
+            </div>
+            <div class="team_text">
+            	<div class="name">
+                	Ram Prasad
+                </div>
+                <div class="title">
+                	Account Manager
+                </div>
+                <div class="contact">
+                	<a>Mob.:69871 76812</a>
+                </div>
+            </div>
+        </div>
+        <div class="team_details">
+        	<div class="team_pic">
+            	<img src="{!$Resource.DE_Community_Assets + '/aditya.png'}" width="60" style="border-radius:60px;"/>
+            </div>
+            <div class="team_text">
+            	<div class="name">
+                	Aditya
+                </div>
+                <div class="title">
+                	Service Manager
+                </div>
+                <div class="contact">
+                	<a>Mob.:97834 65832</a>
+                </div>
+            </div>
+        </div>
+    </div>	
+</aura:component>

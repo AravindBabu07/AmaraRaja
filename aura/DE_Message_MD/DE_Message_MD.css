@@ -1,0 +1,37 @@
+.THIS.main_component{
+    border: 1px solid #ccc;
+    background: white;
+    padding: 15px;
+    border-radius: 5px; 
+}
+.THIS .sub_header {
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+}
+
+.THIS .ceo_image {
+    display: inline-block;
+}
+
+.THIS .ceo_details {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 23px;
+    margin-left: 10px;
+}
+
+.THIS .ceo_name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.THIS .ceo_message {
+    margin-top: 10px;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: justify;
+}

@@ -1,0 +1,77 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="upcoming_service">
+    	<div class="sub_header">
+        	Assets Snapshot
+        </div>
+        <div class="table_header">
+        	<div class="table_label">
+            	Name	
+            </div>
+            <div class="table_label">
+                Installed<br/> Date	
+            </div>
+            <div class="table_label">
+                Warranty<br/> Status	
+            </div>
+            <div class="table_label">
+                Current<br/> Status	
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	WRS 300
+            </div>
+            <div class="table_field">
+            	12th Jun 2018
+            </div>
+            <div class="table_field">
+            	<b style="color:red">Expired</b>
+            </div>
+            <div class="table_field">
+            	Operational
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	WRS 600
+            </div>
+            <div class="table_field">
+            	04th Feb 2019
+            </div>
+            <div class="table_field">
+            	<b style="color:green">Active</b>
+            </div>
+            <div class="table_field">
+            	Operational
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	WDM V8	
+            </div>
+            <div class="table_field">
+            	23rd Sep 2019
+            </div>
+            <div class="table_field">
+            	<b style="color:green">Active</b>
+            </div>
+            <div class="table_field">
+            	Operational
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	PDM 300
+            </div>
+            <div class="table_field">
+            	24th Jan 2020
+            </div>
+            <div class="table_field">
+            	<b style="color:green">Active</b>
+            </div>
+            <div class="table_field">
+            	Breakdown
+            </div>
+        </div>
+    </div>	
+</aura:component>

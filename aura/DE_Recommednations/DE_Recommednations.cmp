@@ -1,0 +1,58 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="recommendations">
+    	<div class="sub_header">
+        	Recommendations and Exchange Offers 
+        </div>
+        <div class="recommend_component">
+            <div class="recommend_heading">
+            	Recommendations
+            </div>
+        	<div class="recommend_image">
+            	<img src="https://www.wendtindia.com/wp-content/themes/wendtindia/images/coolant.jpg" style="width: 100%;"></img>	
+            </div>
+            <div class="recommend_details">
+                <div class="recommend_text">
+                    <b style="font-size:20px;font-weight:200;">Air Motor</b><br/>
+                    Application: For dressing of Vitrified CBN wheels.	
+                </div>
+                <div class="recommend_button">
+                    View More
+                </div>
+            </div>
+        </div>
+        <div class="recommend_component">
+            <div class="recommend_heading">
+            	Exchange Offers
+            </div>
+        	<div class="recommend_image">
+            	<img src="{!$Resource.DE_Community_Assets + '/wdm.png'}" style="width:100%;border-top:1px solid #ccc;"/>
+            </div>
+            <div class="recommend_details">
+                <div class="recommend_text">
+                    <b style="font-size:20px;font-weight:200;">WDM 8V</b><br/>
+                    Upgrade your WDM 8P to WDM 8V with just 20% upgrade fees
+                </div>
+                <div class="recommend_button">
+                    View More
+                </div>
+            </div>
+        </div>
+        <div class="recommend_component">
+            <div class="recommend_heading">
+            	Latest Launches
+            </div>
+        	<div class="recommend_image">
+            	<img src="{!$Resource.DE_Community_Assets + '/wdm1.png'}" style="width:100%;border-top:1px solid #ccc;"/>
+            </div>
+            <div class="recommend_details">
+                <div class="recommend_text">
+                    <b style="font-size:20px;font-weight:200;">WDM 8V</b><br/>
+                    WDM 8P and WDM 8V, Optical Projector and Video Vision
+                </div>
+                <div class="recommend_button">
+                    View More
+                </div>
+            </div>
+        </div>
+    </div>	
+</aura:component>

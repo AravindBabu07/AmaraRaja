@@ -1,0 +1,51 @@
+.THIS .sub_header {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ff6215;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+}
+
+.THIS.inventory_status {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.THIS .inventory_details {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.THIS .inventory_image {
+    display: inline-block;
+}
+
+.THIS .inventory_status_point {
+    width: 15px;
+    height: 15px;
+    background: #e61c1c;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: right;
+    margin-left: 150px;
+}
+
+.THIS .inventory_status_point_1 {
+    width: 15px;
+    height: 15px;
+    background: green;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: right;
+    margin-left: 180px;
+}
+
+.THIS .inventory {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}

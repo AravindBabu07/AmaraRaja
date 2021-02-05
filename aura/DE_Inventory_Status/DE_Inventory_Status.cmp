@@ -1,0 +1,29 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="inventory_status">
+        <div class="sub_header">
+        	Inventory Status
+        </div>
+    	<div class="inventory">
+        	<div class="inventory_image">
+            	<img src="{!$Resource.DE_Community_Assets + '/driller.png'}" style="width:80px;border-top:1px solid #ccc;border-radius:40px;"/>
+            </div>
+            <div class="inventory_details">
+            	Consumables- Coolant
+            </div>
+            <div class="inventory_status_point">
+            
+            </div>
+        </div>
+        <div class="inventory">
+        	<div class="inventory_image">
+            	<img src="{!$Resource.DE_Community_Assets + '/grinder.png'}" style="width:80px;border-top:1px solid #ccc;border-radius:40px;"/>
+            </div>
+            <div class="inventory_details">
+            	Consumables- Oil
+            </div>
+            <div class="inventory_status_point_1">
+            
+            </div>
+        </div>
+    </div>
+</aura:component>

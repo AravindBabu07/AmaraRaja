@@ -1,0 +1,30 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="asset_health">
+    	<div class="health">
+        	<div class="health_icon">
+            	<img src="{!$Resource.DE_Community_Assets + '/age.png'}" width="50"/>
+            </div>
+            <div class="health_details">
+            	<div class="health_name">
+                	Next Service Due
+                </div>
+                <div class="health_output">
+                	21st Aug 2020
+                </div>
+            </div>
+        </div>
+        <div class="health">
+        	<div class="health_icon">
+            	<img src="{!$Resource.DE_Community_Assets + '/status.png'}" width="50"/>
+            </div>
+            <div class="health_details">
+            	<div class="health_name">
+                	Last Service Date
+                </div>
+                <div class="health_output">
+                	29th Jun 2020
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,68 @@
+.THIS .productListing{
+    float: left;
+    width: 46%;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: white;
+    border-radius: 8px;
+    border: 2px solid #0070D2;
+    position: relative;
+}
+.THIS .contentBody{
+    display: table;
+    content: '';
+    clear: both;
+    padding: 10px;
+    width: 100%;
+}
+.THIS .productName{
+    margin-top: 20px;
+    text-align: center;
+    max-height: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.THIS .productPrice{
+    margin-top: 10px;
+    text-align: center;
+}
+.THIS .productImage{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+.THIS .productImgs{
+    height: 150px;
+}
+.THIS .productButton{
+    text-align: center;
+    margin: 20px 5px 11px;
+}
+.THIS .slds-card__body{
+    height: 600px;
+    overflow-y: scroll;
+    margin-bottom: 0 !important;
+}
+.THIS .overLay{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.75);
+}
+.THIS .slds-card{
+    padding-bottom: 10px;
+}
+.THIS .slds-card__footer{
+    padding-top: .75rem;
+    margin-top: 0 !important;
+    border-top: 1px solid rgb(216, 221, 230);
+}
+.THIS .slds-card__header{
+    padding-bottom: .75rem;
+    margin-bottom: 0 !important;
+    border-bottom: 1px solid rgb(216, 221, 230);
+}

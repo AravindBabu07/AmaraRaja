@@ -1,0 +1,47 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <div class="relationship_component">
+        <div class="sub_header">
+            BHEL - WENDT Relationship so far
+        </div>
+        <div class="relationship">
+            <div class="relationship_icon">
+                <img src="{!$Resource.DE_Community_Assets + '/products.png'}" width="90"/>	
+            </div>
+            <div class="relationship_details">
+                <div class="relationship_value">
+                    10 <p style="font-size:22px;font-weight:normal; display:inline-block;">Assets</p>
+                </div>
+            </div>
+        </div>
+        <div class="relationship">
+            <div class="relationship_icon">
+                <img src="{!$Resource.DE_Community_Assets + '/trainings.png'}" width="90"/>	
+            </div>
+            <div class="relationship_details"> 
+                <div class="relationship_value">
+                    5 <p style="font-size:22px;font-weight:normal; display:inline-block;">Trainings</p>
+                </div>
+            </div>
+        </div>
+        <div class="relationship">
+            <div class="relationship_icon">
+            	<img src="{!$Resource.DE_Community_Assets + '/workshop.png'}" width="90"/>	    
+            </div>
+            <div class="relationship_details">
+                <div class="relationship_value">
+                    3 <p style="font-size:22px;font-weight:normal; display:inline-block;">Workshops</p>
+                </div>
+            </div>
+        </div>
+        <div class="relationship">
+            <div class="relationship_icon">
+            	<img src="{!$Resource.DE_Community_Assets + '/services.png'}" width="90"/>	    
+            </div>
+            <div class="relationship_details">
+                <div class="relationship_value">
+                    28 <p style="font-size:22px;font-weight:normal; display:inline-block;">Service Appoinments</p>
+                </div>
+            </div>
+        </div>
+    </div>	
+</aura:component>

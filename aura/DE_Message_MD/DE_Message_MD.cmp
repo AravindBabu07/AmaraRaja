@@ -1,0 +1,29 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <div class="main_component">
+        <div class="sub_header">
+            Message from CEO
+        </div>
+        <div class="component">
+            <div class="ceo">
+                <div class="ceo_image">
+                 	<img src="https://www.wendtindia.com/wp-content/themes/wendtindia/images/rajesh-khanna.jpg" style="width: 100px;border-radius: 210px;"></img>   
+                </div>
+                <div class="ceo_details">
+                    <div class="ceo_name">
+                    	Mr. Rajesh Khanna    
+                    </div>
+                    <div class="ceo_title">
+                     	Executive Director and CEO   
+                    </div>
+                </div>
+            </div>
+            <div class="ceo_message">
+            	WIL aims to be a Customer Intensive, Innovative Company 
+                with a strong Total Quality Management Approach, leveraging 
+                the parental association to become a World class company 
+                in the field of Super abrasives product, Machinery and
+                Precision Components in the Geographies it operates.
+            </div>
+        </div>
+    </div>
+</aura:component>

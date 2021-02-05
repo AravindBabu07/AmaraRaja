@@ -1,0 +1,51 @@
+<aura:component controller="WhiteSpaceProdFamilyCtrl" implements="flexipage:availableForAllPageTypes,force:hasRecordId">
+    
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="prodFamListAttr" type="List" />
+    <aura:attribute name="rowsListAttr" type="List" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <div>
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-card_boundary">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col">
+                        <div class="slds-truncate" title="ACCOUNTS">ACCOUNTS</div>
+                    </th>
+                    <aura:iteration items="{!v.prodFamListAttr}" var="prodFamName" >
+                        <th scope="col" class="slds-text-align_center">
+                            <div class="slds-truncate" title="{!prodFamName}">{!prodFamName}</div>
+                        </th>
+                    </aura:iteration>
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.rowsListAttr}" var="rowObj" >
+                    <tr>
+                        <td>
+                            <div class="slds-truncate" title="">{!rowObj.accName}</div>
+                        </td>
+                        <aura:iteration items="{!rowObj.flagTypeList}" var="rowObj" >
+                            <td class="slds-text-align_center">
+                                <div class="slds-truncate" title="">
+                                    <aura:if isTrue="{!rowObj == 'true'}">
+                                        <img src="{!$Resource.redtick}" width="30"/>
+										<aura:set attribute="else">
+                                            <aura:if isTrue="{!rowObj == 'false'}">
+                                                <img src="{!$Resource.tick}" width="30"/>
+                                                <aura:set attribute="else">
+                                                    &nbsp;
+                                                </aura:set>
+                                            </aura:if> 
+                                        </aura:set>
+                                    </aura:if> 
+                                </div>
+                            </td>
+                        </aura:iteration>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+    </div>
+</aura:component>

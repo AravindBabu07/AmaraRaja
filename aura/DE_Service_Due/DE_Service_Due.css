@@ -1,0 +1,38 @@
+.THIS.asset_health {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.THIS .health {
+    display: inline-block;
+}
+
+.THIS .health_icon {
+    display: inline-block;
+}
+
+.THIS .health_details {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.THIS .health_output {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.THIS .health_details {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.THIS .health {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-top: 10px;
+}

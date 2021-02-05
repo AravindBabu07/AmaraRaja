@@ -1,0 +1,58 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="recommendations">
+    	<div class="sub_header">
+        	Recommendations 
+        </div>
+        <div class="recommend_component">
+            <div class="recommend_heading">
+            	Upgrade
+            </div>
+        	<div class="recommend_image">
+            	<img src="https://www.wendtindia.com/wp-content/themes/wendtindia/images/coolant.jpg" style="width: 100%;"></img>	
+            </div>
+            <div class="recommend_details">
+                <div class="recommend_text">
+                    <b style="font-size:20px;font-weight:200;">Air Motor</b><br/>
+                    Application: For dressing of Vitrified CBN wheels.	
+                </div>
+                <div class="recommend_button">
+                    View More
+                </div>
+            </div>
+        </div>
+        <div class="recommend_component">
+            <div class="recommend_heading">
+            	Refurbish
+            </div>
+        	<div class="recommend_image">
+            	<img src="https://www.wendtindia.com/wp-content/themes/wendtindia/images/5axis-img1.jpg" style="height: 210px;width:100%;border-top:1px solid #ccc;"/>
+            </div>
+            <div class="recommend_details">
+                <div class="recommend_text">
+                    <b style="font-size:20px;font-weight:200;">WRS 300</b><br/>
+                    Peripheral grinding of TC inserts and Precision components
+                </div>
+                <div class="recommend_button">
+                    View More
+                </div>
+            </div>
+        </div>
+        <div class="recommend_component">
+            <div class="recommend_heading">
+            	Addons
+            </div>
+        	<div class="recommend_image">
+            	<img src="https://www.wendtindia.com/wp-content/themes/wendtindia/images/coolant.jpg" style="width:100%;border-top:1px solid #ccc;"/>
+            </div>
+            <div class="recommend_details">
+                <div class="recommend_text">
+                    <b style="font-size:20px;font-weight:200;">Coolant Filtration Systems</b><br/>
+                    Wendt manufactures compact and efficient coolant filtration system
+                </div>
+                <div class="recommend_button">
+                    View More
+                </div>
+            </div>
+        </div>
+    </div>	
+</aura:component>

@@ -1,0 +1,51 @@
+<aura:component controller="DE_UpSellLEXCompCtrl" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <ltng:require scripts="/resource/DE_UpSellLEXjQuery" afterScriptsLoaded="{!c.init}" />
+    
+    <aura:attribute name="prefix" type="String" default="{!$SfdcSite.pathPrefix}"/>
+    <aura:attribute name="cardTitle" type="String" default="UpSell Products"/>
+    <aura:attribute name="recordId" type="String" default="{!recordId}"/>
+    <aura:attribute name="theProducts" type="Map" />
+    <aura:attribute name="objectType" type="String" />
+    <aura:attribute name="currencySymbol" type="String" default="€"/>
+    <aura:attribute name="imageField" type="String"/>
+    
+    <div>
+        <article class="slds-card">
+            <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                    <div class="slds-media__figure">
+                        <span class="slds-icon_container slds-icon-standard-product" title="description of icon when needed">
+                            <div class="slds-icon slds-icon--small" aria-hidden="true">
+                                <img src="{!$SfdcSite.pathPrefix + '/resource/DE_UpSellLEXSLDS/assets/icons/standard/product_60.png'}"/> 
+                            </div>
+                        </span>
+                    </div>
+                    <div class="slds-media__body">
+                        <h2>
+                            <a href="javascript:void(0);" class="slds-card__header-link slds-truncate">
+                                <span class="slds-text-heading--small">{!v.cardTitle}</span>
+                            </a>
+                        </h2>
+                    </div>
+                </header>
+                <div class="slds-no-flex">
+                    
+                </div>
+            </div>
+            <div class="slds-card__body">
+                <div class="contentBody">
+                    <aura:iteration items="{!v.theProducts}" var="item">
+                        <c:DE_UpsellProduct item="{!item}" prefix="{!v.prefix}" oppId="{!v.recordId}" objType="{!v.objectType}" currencySymbol="{!v.currencySymbol}" imageField="{!v.imageField}"/>
+                    </aura:iteration>
+                </div>
+			</div>
+            <div class="slds-card__footer">
+                <aura:if isTrue="{!v.objectType == 'Account'}">
+            		<button class="slds-button slds-button--brand" onclick="{!c.theCreateOpp}">Create Opportunity</button>
+                </aura:if>
+            </div>
+        </article>
+    </div>
+    
+</aura:component>

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Enquiry_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Dia_mm__c</fullName>
+        <externalId>false</externalId>
+        <label>Dia (mm)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discount__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Height_mm__c</fullName>
+        <externalId>false</externalId>
+        <label>Height (mm)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InEditMode_c__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>InEditMode__c</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>List_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>List Price</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Enquiry Products</relationshipLabel>
+        <relationshipName>Enquiry_Products</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Abrasives</fullName>
+                    <default>false</default>
+                    <label>Abrasives</label>
+                </value>
+                <value>
+                    <fullName>Electro Minerals</fullName>
+                    <default>false</default>
+                    <label>Electro Minerals</label>
+                </value>
+                <value>
+                    <fullName>Industrial Ceramics</fullName>
+                    <default>false</default>
+                    <label>Industrial Ceramics</label>
+                </value>
+                <value>
+                    <fullName>Super Refractories</fullName>
+                    <default>false</default>
+                    <label>Super Refractories</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>List_Price__c  *  Quantity__c  *  ( 1 -  Discount__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Thickness_mm__c</fullName>
+        <externalId>false</externalId>
+        <label>Thickness (mm)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Product__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Snagging Wheel</fullName>
+                    <default>false</default>
+                    <label>Snagging Wheel</label>
+                </value>
+                <value>
+                    <fullName>Roll Grinding Wheel</fullName>
+                    <default>false</default>
+                    <label>Roll Grinding Wheel</label>
+                </value>
+                <value>
+                    <fullName>Razor Blade Grinding Wheel</fullName>
+                    <default>false</default>
+                    <label>Razor Blade Grinding Wheel</label>
+                </value>
+                <value>
+                    <fullName>F-Type Wheel</fullName>
+                    <default>false</default>
+                    <label>F-Type Wheel</label>
+                </value>
+                <value>
+                    <fullName>Thin Wheel</fullName>
+                    <default>false</default>
+                    <label>Thin Wheel</label>
+                </value>
+                <value>
+                    <fullName>Gear Grinding</fullName>
+                    <default>false</default>
+                    <label>Gear Grinding</label>
+                </value>
+                <value>
+                    <fullName>Internal Grinding</fullName>
+                    <default>false</default>
+                    <label>Internal Grinding</label>
+                </value>
+                <value>
+                    <fullName>Alumina</fullName>
+                    <default>false</default>
+                    <label>Alumina</label>
+                </value>
+                <value>
+                    <fullName>Zirconia</fullName>
+                    <default>false</default>
+                    <label>Zirconia</label>
+                </value>
+                <value>
+                    <fullName>Aluminium Titanate</fullName>
+                    <default>false</default>
+                    <label>Aluminium Titanate</label>
+                </value>
+                <value>
+                    <fullName>RBSic</fullName>
+                    <default>false</default>
+                    <label>RBSic</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Abrasives</controllingFieldValue>
+                <valueName>Snagging Wheel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Abrasives</controllingFieldValue>
+                <valueName>Roll Grinding Wheel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Abrasives</controllingFieldValue>
+                <valueName>Razor Blade Grinding Wheel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Abrasives</controllingFieldValue>
+                <valueName>F-Type Wheel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Abrasives</controllingFieldValue>
+                <valueName>Thin Wheel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Abrasives</controllingFieldValue>
+                <valueName>Gear Grinding</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Abrasives</controllingFieldValue>
+                <valueName>Internal Grinding</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Abrasives</controllingFieldValue>
+                <controllingFieldValue>Electro Minerals</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electro Minerals</controllingFieldValue>
+                <valueName>Alumina</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electro Minerals</controllingFieldValue>
+                <valueName>Zirconia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electro Minerals</controllingFieldValue>
+                <valueName>Aluminium Titanate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electro Minerals</controllingFieldValue>
+                <valueName>RBSic</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <label>Enquiry Product</label>
+    <nameField>
+        <displayFormat>EP-{0000}</displayFormat>
+        <label>Enquiry Product Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Enquiry Products</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

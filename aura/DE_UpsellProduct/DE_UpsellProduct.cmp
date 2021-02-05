@@ -1,0 +1,49 @@
+<aura:component controller="DE_UpSellLEXCompCtrl">
+    
+    <ltng:require scripts="/resource/DE_UpSellLEXjQuery" afterScriptsLoaded="{!c.init}" />
+    
+	<aura:attribute name="item" type="Product2" />
+    <aura:attribute name="itemPriceEntry" type="PricebookEntry" />
+    <aura:attribute name="prefix" type="String" />
+    <aura:attribute name="oppId" type="String" />
+    <aura:attribute name="productPrice" type="Integer" />
+    <aura:attribute name="objType" type="String" />
+    <aura:attribute name="currencySymbol" type="String" />
+    <aura:attribute name="imageField" type="String" />
+    <aura:attribute name="image" type="String" />
+                    
+    <div class="productListing">
+        <div class="productName">{!v.item.Name}</div>
+        <div class="productPrice">{!'Price: ' + v.currencySymbol + v.productPrice}</div>
+        <div class="productImage">
+            <aura:if isTrue="{!v.image}">
+            	<img class="productImgs" src="{!v.image}"/>
+                <aura:set attribute="else">
+                	<img class="productImgs" src="{!v.item.UpSell_Image__c}"/>
+                </aura:set>
+            </aura:if>
+            
+        </div>
+        <div class="productButton">
+            <aura:if isTrue="{!v.objType == 'Opportunity'}">
+            	<button class="slds-button slds-button--brand" id="{!v.item.Id}" onclick="{!c.addToOpp}">Add to Opportunity</button>
+                <aura:set attribute="else">
+                    <aura:if isTrue="{!v.objType == 'Account'}">
+                        <div class="slds-form-element">
+                            <div class="slds-form-element__control">
+                                <span class="slds-checkbox">
+                                    <input type="checkbox" class="checkBoxClick" name="options" id="{!v.item.Id}" checked="" />
+                                    <label class="slds-checkbox__label" for="{!v.item.Id}">
+                                        <span class="slds-checkbox--faux"></span>
+                                        <span class="slds-form-element__label">Include in Opportunity</span>
+                                    </label>
+                                </span>
+                            </div>
+						</div>
+                    </aura:if>
+                </aura:set>
+            </aura:if>
+        </div>
+        <div class="overLay"></div>
+    </div>
+</aura:component>

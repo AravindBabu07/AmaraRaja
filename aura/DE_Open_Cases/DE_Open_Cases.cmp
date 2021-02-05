@@ -1,0 +1,74 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="open_cases">
+        <div class="table_header">
+        	<div class="table_label">
+            	Date	
+            </div>
+            <div class="table_label">
+            	Type	
+            </div>
+            <div class="table_label">
+            	Asset	
+            </div>
+            <div class="table_label">
+            	Status	
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	2nd Jun 2020
+            </div>
+            <div class="table_field">
+            	Support
+            </div>
+            <div class="table_field">
+            	WRS 300
+            </div>
+            <div class="table_field">
+            	<b style="color:red;">●</b>&nbsp; Open
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	24th Feb 2020
+            </div>
+            <div class="table_field">
+            	Support
+            </div>
+            <div class="table_field">
+            	WDM 8P
+            </div>
+            <div class="table_field">
+            	<b style="color:green;">●</b>&nbsp; Closed
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	3rd Jan 2020
+            </div>
+            <div class="table_field">
+            	General
+            </div>
+            <div class="table_field">
+            	WDM 15V
+            </div>
+            <div class="table_field">
+            	<b style="color:green;">●</b>&nbsp; Closed
+            </div>
+        </div>
+        <div class="table_value">
+        	<div class="table_field">
+            	1st Jan 2020
+            </div>
+            <div class="table_field">
+            	Support
+            </div>
+            <div class="table_field">
+            	WDM V8
+            </div>
+            <div class="table_field">
+            	<b style="color:green;">●</b>&nbsp; Closed
+            </div>
+        </div>
+    </div>	
+</aura:component>

@@ -1,0 +1,76 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <div class="body_Content">   
+        <div class="header">
+            <div class="header_image">
+                <lightning:icon iconName="standard:product" size="small"/>
+            </div>
+            <div class="header_text">
+                Upsell Products
+            </div>
+        </div>
+    </div> 
+    
+    <div class="main_content">
+        <div class="slds-grid">
+            <div class="slds-col slds-order_2 slds-large-order_1 card_pr">
+                <div class="upseel_product_card">
+                    <div class="product_head">
+                        Alumina ceramic rings
+                    </div>
+                    <div class="product_image">
+                        <img src="https://www.cumi-murugappa.com/ceramics/ic/wp-content/uploads/2017/09/defenmce-3-1.jpg" width="90"/>
+                    </div>
+                    <div class="product_select">
+                        <input type="radio" name="radio_1" id="thursday" value="Include in Opportunity"/>&nbsp; Include in Opportunity
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-order_1 slds-large-order_2 card_pr">
+                <div class="upseel_product_card">
+                    <div class="product_head">
+                        Zirconia locating Pins
+                    </div>
+                    <div class="product_image">
+                        <img src="https://www.cumi-murugappa.com/ceramics/ic/wp-content/uploads/2017/09/automotive-locationpin-2.jpg" width="90"/>
+                    </div>
+                    <div class="product_select">
+                        <input type="radio" name="radio_2" id="wednesday" value="Include in Opportunity"/>&nbsp; Include in Opportunity
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slds-grid">
+            <div class="slds-col slds-order_2 slds-large-order_1 card_pr">
+                <div class="upseel_product_card">
+                    <div class="product_head">
+                        Spark plugs
+                    </div>
+                    <div class="product_image">
+                        <img src="https://www.cumi-murugappa.com/ceramics/ic/wp-content/uploads/2017/09/automotive-sparkplug-3.jpg" width="90"/>
+                    </div>
+                    <div class="product_select">
+                        <input type="radio" name="radio_3" id="tuesday" value="Include in Opportunity"/>&nbsp; Include in Opportunity
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-order_2 slds-large-order_1 card_pr">
+                <div class="upseel_product_card">
+                    <div class="product_head">
+                        Ceramic Insulator Rings
+                    </div>
+                    <div class="product_image">
+                        <img src="https://www.cumi-murugappa.com/ceramics/ic/wp-content/uploads/2017/09/electronics-3-1.jpg" width="90"></img>
+                    </div>
+                    <div class="product_select">
+                        <input type="radio" name="radio_4" id="monday" value="Include in Opportunity"/>&nbsp; Include in Opportunity
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button_group">
+        	<button class="slds-button slds-button_brand">Create Opportunity</button>
+        </div>
+    </div>
+</aura:component>
